@@ -1,55 +1,54 @@
-# Learn-BackEnd (Backend Development Journey)
+# Learn-BackEnd
 
-Selamat datang di repositori dokumentasi pembelajaran mandiri saya di bidang **Backend Development** dan arsitektur _server-side_. Repositori ini merangkum evolusi kompetensi teknis saya, mulai dari pemahaman dasar routing, manipulasi logika middleware, hingga integrasi _database_ persisten (NoSQL).
+Selamat datang di repositori dokumentasi belajar mandiri saya di bidang **Backend Development** dan arsitektur _server-side_. Repositori ini berisi kumpulan modul latihan yang saya buat dari dasar sampai integrasi ke _database_ asli.
 
-## Peta Perjalanan Belajar (Learning Roadmap)
+## 🚀 Peta Perjalanan Belajar
 
-Seluruh proyek latihan di bawah ini dikembangkan menggunakan **Node.js** dan framework **Express.js**, serta diuji secara intensif memanfaatkan **Postman** untuk memastikan akurasi dan performa respon data.
+Semua folder latihan di bawah ini dibuat menggunakan **Node.js** dan framework **Express.js**, serta dites menggunakan **Postman** untuk memastikan respon datanya sudah benar.
 
-| Folder                                             | Judul / Ranah Studi          | Cakupan Fokus Teknis                                                                                       | Status Kelayakan |
-| :------------------------------------------------- | :--------------------------- | :--------------------------------------------------------------------------------------------------------- | :--------------- |
-| **[01-Game](./01-Game)**                           | REST API Fundamental         | Penanganan routing statis, custom global logging middleware, dan basic parameters validation.              | ✔ Completed      |
-| **[02-Daftar_Kedai_Kopi](./02-Daftar_Kedai_Kopi)** | Advanced Routing & Querying  | Implementasi dinamis Query Parameter filtering (`req.query`) dan Multiple URL Parameters.                  | ✔ Completed      |
-| **[03-Daftar_Film](./03-Daftar_Film)**             | Multi-Query Optimization     | Penanganan logika penyaringan data kompleks yang menggabungkan operator Boolean (`AND`).                   | ✔ Completed      |
-| **[04-Toko_Sepatu](./04-Toko_Sepatu)**             | 3-Layered Middleware Flow    | Arsitektur _Separation of Concerns_ menggunakan 3 lapisan middleware proteksi bertingkat secara berurutan. | ⭐ Masterpiece   |
-| **[05-Belajar-DataBase](./05-Belajar-DataBase)**   | MongoDB Integration (Part 1) | Transisi data persisten menggunakan MongoDB Native Driver dan pengamanan kredensial via `.env`.            | 🔥 Advanced      |
-| **[06-Daftar-Buku](./06-Daftar-Buku)**             | MongoDB Integration (Part 2) | Replikasi arsitektur database, operasi asinkronus (`async/await`), dan penanganan koleksi data dinamis.    | 🔥 Advanced      |
-
----
-
-## 🛠️ Keahlian Teknis & Perkakas (Tech Stack)
-
-- **Bahasa Pemrograman**: JavaScript (ES6+), SQL
-- **Framework & Library Server**: Node.js, Express.js
-- **Database Engine**: MongoDB (NoSQL)
-- **Ekosistem & Alat Kerja**: Git, GitHub, Postman, npm, Dotenv
+| Folder                                             | Judul / Ranah Studi          | Cakupan Fokus Teknis                                                                                                                                 |
+| :------------------------------------------------- | :--------------------------- | :--------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **[01-Game](./01-Game)**                           | REST API Fundamental         | Penanganan routing dasar, bikin custom middleware global untuk logging, dan validasi ID game.                                                        |
+| **[02-Daftar_Kedai_Kopi](./02-Daftar_Kedai_Kopi)** | Advanced Routing & Querying  | Implementasi filter data menggunakan Query Parameter (`req.query`) dan penggunaan HTTP Status Code (`400` / `404`).                                  |
+| **[03-Daftar_Film](./03-Daftar_Film)**             | Multi-Query Optimization     | Penanganan logika filter yang lebih kompleks dengan menggabungkan dua parameter (genre dan tahun) sekaligus.                                         |
+| **[04-Toko_Sepatu](./04-Toko_Sepatu)**             | 3-Layered Middleware Flow    | Pembuatan 3 lapisan middleware proteksi yang berjalan berurutan (Cek format ID -> Cek data ada -> Cek kecukupan stok) untuk simulasi alur pembelian. |
+| **[05-Belajar-DataBase](./05-Belajar-DataBase)**   | MongoDB Integration (Part 1) | Menghubungkan server Express ke database **MongoDB** asli memakai Native Driver dan mengamankan string koneksi di file `.env`.                       |
+| **[06-Daftar-Buku](./06-Daftar-Buku)**             | MongoDB Integration (Part 2) | Latihan full CRUD (Create, Read, Update, Delete) ke MongoDB menggunakan fungsi asinkronus (`async/await`) dan parsing data JSON.                     |
 
 ---
 
-## 📌 Kompetensi Utama yang Dipelajari
+## 🛠️ Perkakas
 
-1. **Request Lifecycle & Middleware**: Memahami alur kerja _request_ dan _response_ di Express, serta mahir memanipulasinya menggunakan _custom middleware_ global maupun spesifik di tingkat _route_.
-2. **RESTful API Best Practices**: Menerapkan standarisasi respon API yang baik menggunakan format JSON dan penggunaan **HTTP Status Codes** yang tepat (`200`, `201`, `400`, `404`) sesuai dengan kondisi logika server.
-3. **Database Connectivity**: Mampu menjembatani server aplikasi dengan _database_ untuk melakukan operasi pembuatan, pembacaan, pembaruan, dan penghapusan data secara persisten (_Persistent CRUD Operations_).
-4. **Secure Configuration**: Memahami pentingnya pemisahan variabel rahasia string koneksi ke dalam file konfigurasi lingkungan eksternal (`.env`).
+- **Bahasa Pemrograman**: JavaScript (Node.js)
+- **Framework & Library**: Express.js, Dotenv, MongoDB Driver
+- **Tools**: Git, GitHub, Postman
 
 ---
 
-## 💻 Cara Menjalankan Repositori Secara Lokal
+## 📌 Poin Utama yang Dipelajari
 
-1. Lakukan klon pada repositori ini ke komputer Anda:
+1. **Request Lifecycle & Middleware**: Paham alur masuk-keluar data di Express, serta cara memanipulasinya lewat _custom middleware_ baik secara global maupun di route spesifik.
+2. **RESTful API Standar**: Menerapkan respon API yang bersih dengan format JSON dan penempatan **HTTP Status Codes** yang sesuai dengan kondisi logika di server.
+3. **Koneksi Database**: Bisa menghubungkan server Express ke database NoSQL untuk mengelola data secara permanen (CRUD).
+4. **Manajemen Variabel Lingkungan**: Paham cara mengamankan data rahasia seperti _connection string_ database menggunakan file `.env`.
+
+---
+
+## 💻 Cara Menjalankan di Lokal
+
+1. Clone repositori ini:
    ```bash
    git clone https://github.com
    ```
-2. Masuk ke salah satu sub-folder proyek yang ingin Anda uji, misalnya:
+2. Masuk ke salah satu sub-folder latihan, misalnya:
    ```bash
    cd 04-Toko_Sepatu
    ```
-3. Lakukan instalasi dependensi (pastikan Anda sudah menginstall Node.js):
+3. Install package yang dibutuhkan:
    ```bash
    npm install
    ```
-4. Jalankan server aplikasi:
+4. Jalankan server aplikasinya:
    ```bash
    node index.js
    ```
