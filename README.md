@@ -57,5 +57,5 @@ Semua folder latihan di bawah ini dibuat menggunakan **Node.js** dan framework *
    ```
 5. Jalankan server aplikasinya:
    ```bash
-   node index.js
+   node app.js
    ```
