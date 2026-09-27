@@ -2,7 +2,7 @@
 
 Selamat datang di repositori dokumentasi pembelajaran mandiri saya di bidang **Backend Development** dan arsitektur _server-side_. Repositori ini merangkum evolusi kompetensi teknis saya, mulai dari pemahaman dasar routing, manipulasi logika middleware, hingga integrasi _database_ persisten (NoSQL).
 
-## 🚀 Peta Perjalanan Belajar (Learning Roadmap)
+## Peta Perjalanan Belajar (Learning Roadmap)
 
 Seluruh proyek latihan di bawah ini dikembangkan menggunakan **Node.js** dan framework **Express.js**, serta diuji secara intensif memanfaatkan **Postman** untuk memastikan akurasi dan performa respon data.
 
