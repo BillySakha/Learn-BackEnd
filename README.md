@@ -37,18 +37,25 @@ Semua folder latihan di bawah ini dibuat menggunakan **Node.js** dan framework *
 ## 💻 Cara Menjalankan di Lokal
 
 1. Clone repositori ini:
+
    ```bash
-   git clone https://github.com
+   git clone https://github.com/BillySakha/Learn-BackEnd
+
    ```
-2. Masuk ke salah satu sub-folder latihan, misalnya:
+
+2. Masuk ke folder utama:
+   ```bash
+   cd Learn-BackEnd
+   ```
+3. Masuk ke salah satu sub-folder latihan, misalnya:
    ```bash
    cd 04-Toko_Sepatu
    ```
-3. Install package yang dibutuhkan:
+4. Install package yang dibutuhkan:
    ```bash
    npm install
    ```
-4. Jalankan server aplikasinya:
+5. Jalankan server aplikasinya:
    ```bash
    node index.js
    ```
